@@ -2,6 +2,7 @@
 module ReadLine where
 
 -- putStrLn is the printf function of Haskell
+main :: Int
 main = do
           putStrLn "Digite um numero"
           -- readLn is the scanf function of Haskell
@@ -11,3 +12,6 @@ main = do
 -- Observation: You NEED to put your function AFTER the do statement. Otherwise, the program won't compile.
 -- Observation 2: For some reason, and only god knows why, readLn works when you use an IF statement after it, but doesn't work otherwise.
 -- What we learned today? Use getLine.
+
+funcao :: Int -> Int
+funcao x = getLine
